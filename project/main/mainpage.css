@@ -1,0 +1,441 @@
+.text-typing
+{
+    width: 40em;
+    color:#7598B6;
+    font-size: 30px;
+    font-family: 'Marck Script', cursive;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+    position: relative;
+    top: -400px;
+    left: 690px;
+}
+.text-typing1
+{
+    width: 40em;
+    color:#7598B6;
+    font-size: 30px;
+    font-family: 'Marck Script', cursive;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+    position: relative;
+    top: -400px;
+    left: 780px;
+}
+.text-typing2
+{
+    width: 40em;
+    color:white;
+    font-size: 30px;
+    font-family: 'Marck Script', cursive;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+    position: relative;
+    top: -380px;
+    left:710px;
+    align-content: center;
+}
+@keyframes type{
+    from { width: 0; }
+}
+ 
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.header_section {
+position: relative;
+z-index: 99999;
+}
+ul {
+  background: #8CCAFF;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  height: 60px;
+
+}
+li {
+  color: white;
+  background: #7598B6;
+  display: block;
+  float: left;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  width: 303.7px;
+  padding-left: 1px;
+  font-family: "Tahoma";
+  font-weight: 200;
+  height: 25px;
+  font-size:19px;
+  filter: blur(0px);
+  height: 60px;
+  padding-top:15px;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+li:hover {
+  background: red;
+  cursor: pointer;
+  background: #A3CFF9;
+
+}
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  left: 0;
+  display: none;
+}
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+ul li ul li {
+  width: 100%;
+}
+ul li:hover{
+  font-size:24px;
+}
+
+.link:hover{
+  text-decoration: none;
+  color: white;
+  padding: 25px 10px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header_section {
+position: relative;
+z-index: 99999;
+}
+.info{
+
+    margin-top: -60px;
+    padding-top: 40px;
+   
+  background: linear-gradient(#ffffff, #7598B6);
+  
+ 
+}
+.info-1{
+     background: linear-gradient( #7598B6, #ffffff);
+}
+.number {
+    color: black;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 300px;
+}
+.number1 {
+    color: black;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 300px;
+}
+.rect{
+    width:500px;
+    height:100px;
+    border:1px solid #000;
+    background-color: white;
+    margin-left: 700px;
+    z-index: 1;
+    margin-top: -50px;
+}
+.img{
+    margin-left: 250px;
+    z-index: -1;
+}
+.carousel-nav-icon {
+   height: 48px;
+   width: 48px;
+}
+.carousel-item {
+   .col, .col-sm, .col-md {
+      margin: 8px;
+      height: 300px;
+      background-size: cover;
+      background-position: center center;
+   }
+}
+
+
+body {transition: background .15s linear;}
+
+/* nothing below this point is needed*/
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700,800,900&display=swap');
+
+h1 {
+   font-family: 'Libre Franklin', sans-serif;
+   font-weight: 700;
+}
+.blog .carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -60px;
+   
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 20%;
+    width: 14px;
+    height: 2px;
+    margin-left: 4px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+}
+/* Included color classes.. 
+  .red 
+  .blue 
+  .yellow 
+*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    margin-left: 100px;
+
+   
+    text-align: center;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+
+    min-width: 380px;
+
+    max-height: 360px;
+    width: 50%;
+    height: auto;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.grid figure figcaption > a {
+    
+    text-indent: 200%;
+
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+figure.effect-apollo {
+    background: #3498db;
+}
+
+figure.effect-apollo img {
+    opacity: 0.95;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.05,1.05,1);
+    transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect-apollo figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    content: '';
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+figure.effect-apollo p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 3em;
+    padding: 0 1em;
+    max-width: 150px;
+    border-right: 4px solid #fff;
+    text-align: right;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.effect-apollo h2 {
+    text-align: left;
+}
+
+figure.effect-apollo:hover img {
+    opacity: 0.6;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+figure.effect-apollo:hover figcaption::before {
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+figure.effect-apollo:hover p {
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.link-1 {
+  transition: 0.3s ease;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid #7598B6;
+  border-bottom: 4px solid #7598B6;
+  padding: 5px 0;
+}
+.link-2 {
+  transition: 0.3s ease;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid #7598B6;
+  border-bottom: 4px solid #7598B6;
+  padding: 5px 0;
+}
+.link-1:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0; 
+  font-size:21px;
+}
+
+.flex{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+  color:white;
+  background-color: black;
+  margin-top:-15px;
+  opacity: 0.9;
+}
+.flex1{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.flex2{
+  display: flex;
+  flex-direction: column;
+   width: 20%;
+}
+.flex3{
+  display: flex;
+  flex-direction: column;
+   width: 20%;
+}
+.flex4{
+  display: flex;
+  flex-direction: column;
+   width: 20%;
+}
+hr{
+   border: none;
+    background-color: white; /*aligning text in places on the page */
+    color: black; /*Selecting the color of the main text */
+    height: 2px; /*Change the height of the border around*/
+    width:200px;/*Change the width of the border around*/
+    margin-left: -20px;
+} 
+h5{
+    font-family: "Segoe UI";
+}
+.linkss{
+  text-decoration: none;
+  color:white;
+}
+.linkss:hover{
+    text-decoration: none;
+  color:black;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
