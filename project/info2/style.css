@@ -1,0 +1,310 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header_section {
+position: relative;
+z-index: 99999;
+margin-bottom: -20px;
+}
+ul {
+  background: #8CCAFF;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  height: 60px;
+
+}
+li {
+  color: white;
+  background: #7598B6;
+  display: block;
+  float: left;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  width: 303.7px;
+  padding-left: 1px;
+  font-family: "Tahoma";
+  font-weight: 200;
+  height: 25px;
+  font-size:19px;
+  filter: blur(0px);
+  height: 60px;
+  padding-top:15px;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+li:hover {
+  background: red;
+  cursor: pointer;
+  background: #A3CFF9;
+
+}
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  left: 0;
+  display: none;
+}
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+ul li ul li {
+  width: 100%;
+}
+ul li:hover{
+  font-size:24px;
+}
+
+.link:hover{
+  text-decoration: none;
+  color: white;
+  padding: 25px 10px;
+}
+
+.link-1 {
+  transition: 0.3s ease;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid #7598B6;
+  border-bottom: 4px solid #7598B6;
+  padding: 5px 0;
+}
+
+.link-1:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0; 
+  font-size:21px;
+}
+*{
+	font-family: Arial;
+}
+header{
+	text-align: center;
+	height: 80px;
+	background-color: #000000;
+	color: white;
+}
+
+.video{
+	width: 100%;
+	height: 400px;
+	background-color: #FAF4F0;
+}
+
+.info{
+	width: 100%;
+	background: linear-gradient(to bottom, #7598b6 10%, #ffffff 100%);
+	color: white;
+	border: none;
+	text-align: center;
+}
+
+.text4{
+  color: #7598b6;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.text1{
+  color: #ffffff;
+  font-size: 18px;
+  text-align: justify;
+}
+
+
+div.main{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+
+.img{
+  border-radius: 50%;
+  width: 300px;
+  height: 280px;
+}
+
+.info1{
+	width: 70%;
+	
+	text-align: left;
+}
+
+
+.best_info{
+	width: 100%;
+	height: 600px;
+	
+	padding-top: 80px;
+	padding-bottom: 50px;
+	
+}
+
+.best_info > div{
+
+margin: 0px;
+padding: 0px;
+}
+
+.image{
+	width: 100%;
+	height: 75%;
+	background-color: yellow;
+}
+
+.text{
+	width: 100%;
+	height: 25%;
+	background-color: #007C98;
+
+}
+
+div.grid{
+	width: 85%;
+	margin-left: 8%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+
+}
+
+div.grid > div{/*
+	border: 1px solid blue;
+	*/
+	height: 300px;
+}
+
+div.item1{
+	grid-column-start: 1;
+	 grid-column-end: 2; 
+	 grid-row-start: 1; 
+	 grid-row-end:3;
+	 background-color: blue;
+}
+
+div.item5{
+	grid-column-start: 2;
+	 grid-column-end: 4; 
+	 grid-row-start: 2; 
+	 grid-row-end:3;
+	 background-color: #B69F2A;
+}
+
+footer{
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	background-color: #000000;
+	color: white;
+}
+
+
+
+.container {
+  position: relative;
+  width: 100%;
+
+
+}
+
+.image2 {
+  display: block;
+  width: 100%;
+ 
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.flex{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+  color:white;
+  background-color: black;
+  opacity: 0.9;
+  height: 240px;
+}
+.flex1{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.flex2{
+  display: flex;
+  flex-direction: column;
+   width: 20%;
+}
+.flex3{
+  display: flex;
+  flex-direction: column;
+   width: 20%;
+}
+.flex4{
+  display: flex;
+  flex-direction: column;
+   width: 20%;
+}
+hr{
+   border: none;
+    background-color: white; /*aligning text in places on the page */
+    color: black; /*Selecting the color of the main text */
+    height: 2px; /*Change the height of the border around*/
+    width:200px;/*Change the width of the border around*/
+    margin-left: -20px;
+} 
+h5{
+    font-family: "Segoe UI";
+}
+.linkss{
+  text-decoration: none;
+  color:white;
+}
+.linkss:hover{
+    text-decoration: none;
+  color:black;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
