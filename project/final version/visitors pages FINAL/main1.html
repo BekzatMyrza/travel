@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formpage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="mainpage.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<style>
+  .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+  </style>
+</head>
+<body>
+	<nav class="header_section" id="myHeader">
+  <ul>
+  <li ><a href="main1.html"><img style="height: 120px;margin-bottom: -55px;margin-top: -40px; margin-left:-20px;" src="Travel.png"></a></li>
+  <li style="margin-left: 600px;" ><a class=" link-1" href="visitoraustralia.php" data-title="country">COUNTRY</a>
+    <ul>
+        <li><a class=" link-1" href="visitoraustralia.php">Australia</a></li>
+        <li><a  class=" link-1" href="visitorspain.php">Spain</a></li>
+        <li><a class=" link-1" href="visitorbrazil.php">Brazil</a></li>
+        <li><a  class=" link-1" href="visitorjapan.php">Japan</a></li>
+        <li><a  class=" link-1" href="visitorislands.php">Islands</a></li>
+      </ul></li>
+  <li><a href="info.html" class=" link-1" data-title="travel">TRAVEL</a>
+    <ul>
+        <li><a class="link-1" href="visitoractivevacation.html">Active vacation</a></li>
+        <li><a class="link-1" href="visitorbeachvacation.html">Beach vacation</a></li>
+        <li><a  class="link-1" href="visitorkidsvacation.html">Vacation with kids</a></li>
+      </ul></li>
+  <li ><a class=" link-1" href="visitoraboutus.php" data-title="about">ABOUT US</a></li>
+  <li> <a class=" link-1" href="#" data-title="Blog">LOG IN</a>
+      <ul>
+        <li><a class="link-1" href="login.php">FOR ADMIN</a></li>
+        <li><a class="link-1" href="loginuser.php">FOR USERS</a></li>
+      </ul>
+  </li>
+</ul>
+</nav>
+
+<!-- ChatBot -->
+<div class="chat_icon">
+  <i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+  <div class="my-conv-form-wrapper">
+    <form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! How can I help you" name="category">
+        <option value="Book a hotel">Book a hotel ?</option>
+        <option value="Choose the tour">Choose the tour ?</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="WebDevelopment">
+          <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+  
+        </div>
+        <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Please, enter your name"> 
+        </div>
+      </div>
+
+      
+
+      <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+     <select data-conv-question="Do you want to find it?" name="category">
+        <option value="Yeap">Yes ?</option>
+        <option value="No">No ?</option>
+      </select>
+
+
+      <div data-conv-fork="category">
+        <div data-conv-case="Yeap">
+          <input type="text" name="name" data-conv-question="If you want to book a hotel or choose the tour, you will di the same action.<br>
+          1. Go to the page country using menu;<br>
+          2. Look at hotels(our tours to country) and choose 1;<br>
+          3. Put on the button'Book Hotel';" data-no-answer="true">
+
+  
+        </div>
+        <div data-conv-case="No" data-conv-fork="first-question2">
+          <input type="text" data-conv-question="Good luck! See you soon!" data-no-answer="true">
+        </div>
+      </div>
+      
+
+
+
+      <select data-conv-question="Finish">
+        <option value="Yes">Conform</option>
+      </select>
+
+    </form>
+  </div>
+</div>
+<!-- ChatBot end -->
+
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="11.jpg" class="d-block w-100" alt="..."><p class="text-typing" style="font-family: 'Gayathri', sans-serif;">Providing travel opportunities around the world</p>
+      <button class="button1"><a class="city" href="#cities">Select tour</a></button>
+    </div>
+    <div class="carousel-item">
+      <img src="6_auto_x2_auto_x2.jpg"class="d-block w-100" alt="..."><p class="text-typing1" style="font-family: 'Gayathri', sans-serif;">Huge selection of countries to travel</p>
+      <button class="button1"><a class="city" href="#cities">Select tour</a></button>
+    </div>
+    <div class="carousel-item">
+      <img src="10.jpg" class="d-block w-100" alt="..."><p class="text-typing2" style="font-family: 'Gayathri', sans-serif;">Filled with unforgettable emotions and vivid events</p>
+      <button class="button1"><a class="city" href="#cities">Select tour</a></button>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+<div class="info">
+	<table>
+		<tr>
+			<td><img class="img " width="60%" src="london.jpg"></td>
+			<td width="40%"><p style="color:white;font-size:20px; font-family: 'Source Code Pro', monospace; margin-right: 70px; margin-top: 70px; text-align: justify;"> A travel agency is a private retailer or public service that provides travel and tourism-related services to the general public on behalf of accommodation or travel suppliers to offer different kinds of travelling packages for each destination. Travel agencies can provide outdoor. </p></td>
+		</tr>
+	</table>
+	
+</div>
+
+
+<div style="background-color: #7598B6; padding-top: 50px">
+
+	
+	<table style="background-color: #7598B6;">
+
+		<tr>
+
+			<td width="700px"><img style="margin-left:180px" src="stick-man.png"/></td>
+			<td  width="33%"><img style="margin-left:180px" src="around-the-globe.png"/></td>
+			<td  width="33%"><img style="margin-left:200px" src="rating.png"/></td>
+			
+		</tr>
+
+    <tr>
+      <td width="700px" align="center" style="color:white; font-size:17px;">More than 10 thousand satisfied<br> tourists all over Kazakhstan</td>
+      <td  width="33%"  align="center" style="color:white; font-size:17px;">Travel routes have been made to many<br> countries and their number is growing</td>
+      <td  width="33%" align="center" style="color:white; font-size:17px;">All hotels are highly appreciated by all <br>visitors, they are comfortable for<br> living and a worthy rest</td>
+    </tr>
+	</table>
+</div>
+
+	<script>
+		var number = document.querySelector('.number'),
+		numberTop = number.getBoundingClientRect().top,
+		start = +number.innerHTML, end = +number.dataset.max;
+
+		window.addEventListener('scroll', function onScroll() {
+			if(window.pageYOffset > numberTop - window.innerHeight / 2) {
+				this.removeEventListener('scroll', onScroll);
+				var interval = setInterval(function() {
+					number.innerHTML = ++start;
+					if(start == end) {
+						clearInterval(interval);
+					}
+				}, 5);
+			}
+		});
+	</script>
+
+
+<div class="info-1">
+<br><br><br>
+
+<div class=" container" ><a name="cities">
+            <div class="row blog">
+                <div class="col-md-12">
+                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#blogCarousel" data-slide-to="0" class="active first"></li>
+                            <li data-target="#blogCarousel" data-slide-to="1" class="second"></li>
+                        </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+
+                            <!--.item-->
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="visitorislands.php">
+                                            <img src="maldi.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="visitorspain.php">
+                                            <img src="https://madridlocalguide.com/wp-content/uploads/2020/06/alev-takil-x2Or94kjaqo-unsplash-1-3-1.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="visitorislands.php">
+                                            <img src="https://travelfamilyblog.com/wp-content/uploads/2020/06/road-trip-with-raj-0uI8LANIe0A-unsplash-1440x1080.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="visitorspain.php">
+                                            <img src="https://i1.wp.com/annasophievg.com/wp-content/uploads/2018/10/barcelona-gaudi.jpg?resize=1440%2C1080&ssl=1" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+                                                        <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="visitoraustralia.php">
+                                            <img src="https://www.wallpaperimageshd.com/uploads/2020/03/31/water-view-of-sydney-australia-1440x1080.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="visitorislands.php">
+                                            <img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/reykjavik-iceland/overview/reykjavik-iceland-city-mountan-view.jpg?$1440x1080$" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="visitorbrazil.php">
+                                            <img src="https://ullsee.ru/savedImages/d7173270-121e-11e7-9006-9717fb4e5b46.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="visitorjapan.php">
+                                            <img src="tokio.jfif" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+
+                </div>
+            </div>
+</div></a>
+</div>
+
+<br><br><br><br>
+<div><video  width=90% height=80% style="margin-left: 5%;" loop muted="" autoplay poster="video1.webm" class="screen_vid">
+        
+        <source  src="1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    
+    </video></div>
+
+    <br><br><br>
+<div class="grid">
+					<figure class="effect-apollo"> 
+						<img  src="https://i1.wp.com/www.traveljael.com/wp-content/uploads/2020/03/IMG_8817.jpg?fit=1440%2C1080&ssl=1" alt="img18"/>
+						<figcaption>
+							<h2>Active <span>Vacation</span></h2>
+							<p>Hiking in the cities, path to the mountains.</p>
+							<a href="visitoractivevacation.html">View more</a>
+						</figcaption>			
+					</figure>
+					<figure class="effect-apollo">
+						<img src="s.jpg" alt="img22"/>
+						<figcaption>
+							<h2>Beach <span>Vacation</span></h2>
+							<p>Swimming in the sea, spending time in the jacuzzi.</p>
+							<a href="visitorbeachvacation.html">View more</a>
+						</figcaption>			
+					</figure>
+					<figure class="effect-apollo">
+						<img src="https://3littlebuttons.com/wp-content/uploads/2019/03/IMG_7345-1440x1080.jpeg" alt="img22"/>
+						<figcaption>
+							<h2>Kids <span>Vacation</span></h2>
+							<p>Visiting entertainment places, the presence of special areas..</p>
+							<a href="visitorkidsvacation.html">View more</a>
+						</figcaption>			
+					</figure>
+</div>
+<br><br><br><br>
+
+
+
+<footer class="flex">
+  
+
+  <div class="flex1">
+    <div>
+      <h5>Services</h5>
+      <hr>
+    </div>
+    <div><a class="linkss" href="visitoraustralia.php">Travel tours</a></div>
+    <div><a class="linkss" href="visitoractivevacation.html">Vacations</a></div>
+  </div>
+  <div class="flex2">
+    <div>
+      <h5>About</h5>
+      <hr>
+    </div>
+    <div><a class="linkss" href="visitoraboutus.php">About Us</a></div>
+  </div>
+  <div class="flex3">
+    <div>
+      <h5>Contacts</h5>
+      <hr>
+    </div>
+    <div>+7654xxxxxxx</div>
+    <div>Nur-Sultan<br>
+     Astana IT University</div>
+  </div>
+  <div class="flex4">
+    <div ><img style="margin-top: -40px" height=160px width=180px src="Travel.png"></div>
+    <div style="margin-top: -30px; margin-left: 30px">
+    	
+      <a href="#"><img style=" margin-left: 5px" src="instagram.png"></a>
+      <a href="#"><img style=" margin-left: 5px"   src="telegram.png"></a>
+      <a href="#"><img style=" margin-left: 5px"   src="twitter.png"></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+<script type="text/javascript">
+  portfolioList = document.querySelectorAll('.portfolio-box');
+  portfolioList.forEach(function(portfolioPic) {
+    portfolioPic.addEventListener('click',function(){
+      bg = this.style.backgroundImage;
+      document.getElementById('port_pop_pic_bg').classList.add("active")
+      document.getElementById('port_pop_pic').style.backgroundImage = bg
+      document.getElementById('port_pop_pic').classList.add("active")
+    }); 
+  })
+  document.getElementById('port_pop_pic_bg').addEventListener('click',function(){
+      document.getElementById('port_pop_pic_bg').classList.remove("active")
+      document.getElementById('port_pop_pic').classList.remove("active")
+  })
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
